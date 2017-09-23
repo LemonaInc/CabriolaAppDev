@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>CabriolaApp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>OneSignalNotificationServiceExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>EA4320241F60BFB900431859</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA8C51EB1F60B40C009B127D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EAC6E8411F5FA72E00B1CF26</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EAC6E8551F5FA72E00B1CF26</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EAC6E8601F5FA72E00B1CF26</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

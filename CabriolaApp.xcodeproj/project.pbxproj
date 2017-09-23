@@ -1,0 +1,982 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A79EDFE484D1ADD5E26635EA /* Pods_CabriolaAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48A483F6A8E88E9E9CD2919 /* Pods_CabriolaAppTests.framework */; };
+		B701929B46E06115CCA70DB6 /* Pods_CabriolaAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EC454B7191D8DB2BA17457 /* Pods_CabriolaAppUITests.framework */; };
+		EA1BD1421F6A1C8500B79DC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1BD1411F6A1C8500B79DC0 /* UIKit.framework */; };
+		EA5BCAAA1F60D98F00933429 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5BCAA91F60D98F00933429 /* MapKit.framework */; };
+		EA5BCAAC1F60DA6E00933429 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5BCAAB1F60DA6E00933429 /* MapViewController.swift */; };
+		EAC6E84D1F5FA72E00B1CF26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E84C1F5FA72E00B1CF26 /* Assets.xcassets */; };
+		EAC6E85B1F5FA72E00B1CF26 /* CabriolaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6E85A1F5FA72E00B1CF26 /* CabriolaAppTests.swift */; };
+		EAC6E8661F5FA72E00B1CF26 /* CabriolaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6E8651F5FA72E00B1CF26 /* CabriolaAppUITests.swift */; };
+		EAC6E8761F5FA74500B1CF26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6E8741F5FA74500B1CF26 /* AppDelegate.swift */; };
+		EAC6E8771F5FA74500B1CF26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6E8751F5FA74500B1CF26 /* ViewController.swift */; };
+		EAC6E89F1F5FA77400B1CF26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E89E1F5FA77400B1CF26 /* Main.storyboard */; };
+		EAC6E8A11F5FA78600B1CF26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8A01F5FA78600B1CF26 /* LaunchScreen.storyboard */; };
+		EAC6E8A51F5FA7A500B1CF26 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6E8A31F5FA7A500B1CF26 /* LoginViewController.swift */; };
+		EAC6E8A61F5FA7A500B1CF26 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6E8A41F5FA7A500B1CF26 /* AccountViewController.swift */; };
+		EAC6E8A91F5FA7D800B1CF26 /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC6E8A71F5FA7D800B1CF26 /* AccountKit.framework */; };
+		EAC6E8AA1F5FA7D800B1CF26 /* AccountKitStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8A81F5FA7D800B1CF26 /* AccountKitStrings.bundle */; };
+		EAC6E8AC1F5FA80C00B1CF26 /* AccountKitStrings.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC6E8A81F5FA7D800B1CF26 /* AccountKitStrings.bundle */; };
+		EAC6E8AF1F5FA96A00B1CF26 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC6E8AE1F5FA96A00B1CF26 /* UserNotifications.framework */; };
+		EAC6E8B11F5FA97000B1CF26 /* FacebookCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC6E8B01F5FA97000B1CF26 /* FacebookCore.framework */; };
+		EAC6E8B31F5FA97300B1CF26 /* FacebookLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC6E8B21F5FA97300B1CF26 /* FacebookLogin.framework */; };
+		EAC6E8C71F5FAA7100B1CF26 /* BridgeBlur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8B61F5FAA7100B1CF26 /* BridgeBlur.jpg */; };
+		EAC6E8C81F5FAA7100B1CF26 /* CabriolaBlank.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8B71F5FAA7100B1CF26 /* CabriolaBlank.png */; };
+		EAC6E8C91F5FAA7100B1CF26 /* CabriolaFullLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8B81F5FAA7100B1CF26 /* CabriolaFullLogo.png */; };
+		EAC6E8CA1F5FAA7100B1CF26 /* CabriolaTrees.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8B91F5FAA7100B1CF26 /* CabriolaTrees.png */; };
+		EAC6E8CB1F5FAA7100B1CF26 /* city.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8BA1F5FAA7100B1CF26 /* city.jpg */; };
+		EAC6E8CC1F5FAA7100B1CF26 /* CityLights.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8BB1F5FAA7100B1CF26 /* CityLights.jpg */; };
+		EAC6E8CD1F5FAA7100B1CF26 /* diego-ph-221236.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8BC1F5FAA7100B1CF26 /* diego-ph-221236.jpg */; };
+		EAC6E8CE1F5FAA7100B1CF26 /* FullBridge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8BD1F5FAA7100B1CF26 /* FullBridge.jpg */; };
+		EAC6E8CF1F5FAA7100B1CF26 /* Line.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8BE1F5FAA7100B1CF26 /* Line.png */; };
+		EAC6E8D01F5FAA7100B1CF26 /* logo-white (77).png in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8BF1F5FAA7100B1CF26 /* logo-white (77).png */; };
+		EAC6E8D11F5FAA7100B1CF26 /* portland.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8C01F5FAA7100B1CF26 /* portland.jpg */; };
+		EAC6E8D21F5FAA7100B1CF26 /* sanfran.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8C11F5FAA7100B1CF26 /* sanfran.jpg */; };
+		EAC6E8D31F5FAA7100B1CF26 /* seattle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8C21F5FAA7100B1CF26 /* seattle.jpg */; };
+		EAC6E8D41F5FAA7100B1CF26 /* Skyline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8C31F5FAA7100B1CF26 /* Skyline.jpg */; };
+		EAC6E8D51F5FAA7100B1CF26 /* Strokes2.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8C41F5FAA7100B1CF26 /* Strokes2.png */; };
+		EAC6E8D61F5FAA7100B1CF26 /* Surf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8C51F5FAA7100B1CF26 /* Surf.jpg */; };
+		EAC6E8D71F5FAA7100B1CF26 /* vancouver.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8C61F5FAA7100B1CF26 /* vancouver.jpg */; };
+		EAC6E8DA1F5FAA8000B1CF26 /* Deadhead_Script_Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8D81F5FAA8000B1CF26 /* Deadhead_Script_Italic.otf */; };
+		EAC6E8DB1F5FAA8000B1CF26 /* Raleway-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8D91F5FAA8000B1CF26 /* Raleway-Regular.otf */; };
+		EAC6E8DF1F5FAC7500B1CF26 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6E8DD1F5FAC7500B1CF26 /* User.swift */; };
+		EAC6E8E01F5FAC7500B1CF26 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6E8DE1F5FAC7500B1CF26 /* Course.swift */; };
+		EAC6E8E61F5FAC9600B1CF26 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6E8E21F5FAC9600B1CF26 /* TableViewController.swift */; };
+		EAC6E8E71F5FAC9600B1CF26 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6E8E31F5FAC9600B1CF26 /* DetailViewController.swift */; };
+		EAC6E8E81F5FAC9600B1CF26 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6E8E41F5FAC9600B1CF26 /* TableViewCell.swift */; };
+		EAC6E8E91F5FAC9600B1CF26 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8E51F5FAC9600B1CF26 /* TableViewCell.xib */; };
+		EAC6E8EB1F5FB8DC00B1CF26 /* LightsBlur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E8EA1F5FB8DC00B1CF26 /* LightsBlur.jpg */; };
+		FCF3FAB833061F63C6C93BB4 /* Pods_CabriolaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BBE7599A1C0D24698942160 /* Pods_CabriolaApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAC6E8571F5FA72E00B1CF26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAC6E83A1F5FA72E00B1CF26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAC6E8411F5FA72E00B1CF26;
+			remoteInfo = CabriolaApp;
+		};
+		EAC6E8621F5FA72E00B1CF26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAC6E83A1F5FA72E00B1CF26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAC6E8411F5FA72E00B1CF26;
+			remoteInfo = CabriolaApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA8C51F71F60B40C009B127D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04468D0E1CFE4FE7BD8504E0 /* Pods-CabriolaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabriolaApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CabriolaApp/Pods-CabriolaApp.debug.xcconfig"; sourceTree = "<group>"; };
+		33A00CF124D351663613DE01 /* Pods-CabriolaApp-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabriolaApp-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-CabriolaApp-OneSignalNotificationServiceExtension/Pods-CabriolaApp-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		58A4B40F02666BA7F1622560 /* Pods-CabriolaApp-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabriolaApp-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CabriolaApp-OneSignalNotificationServiceExtension/Pods-CabriolaApp-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		62EC454B7191D8DB2BA17457 /* Pods_CabriolaAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CabriolaAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		716409A5C72F71FF3147E31E /* Pods_CabriolaApp_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CabriolaApp_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74AD6ACE26C52453F63277B0 /* Pods-CabriolaAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabriolaAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CabriolaAppUITests/Pods-CabriolaAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7BBE7599A1C0D24698942160 /* Pods_CabriolaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CabriolaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		844DCC11173BB315E6A7ED19 /* Pods-CabriolaAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabriolaAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CabriolaAppUITests/Pods-CabriolaAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B48A483F6A8E88E9E9CD2919 /* Pods_CabriolaAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CabriolaAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C61306704B6C9DCDE6E88756 /* Pods-CabriolaAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabriolaAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CabriolaAppTests/Pods-CabriolaAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		C9362C5EABBBFBBC3465480B /* Pods-CabriolaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabriolaApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CabriolaApp/Pods-CabriolaApp.release.xcconfig"; sourceTree = "<group>"; };
+		EA1BD1411F6A1C8500B79DC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EA5BCAA91F60D98F00933429 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EA5BCAAB1F60DA6E00933429 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		EA8C51E71F60AE61009B127D /* CabriolaApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CabriolaApp.entitlements; sourceTree = "<group>"; };
+		EAC6E8421F5FA72E00B1CF26 /* CabriolaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CabriolaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC6E84C1F5FA72E00B1CF26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAC6E8511F5FA72E00B1CF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAC6E8561F5FA72E00B1CF26 /* CabriolaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CabriolaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC6E85A1F5FA72E00B1CF26 /* CabriolaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabriolaAppTests.swift; sourceTree = "<group>"; };
+		EAC6E85C1F5FA72E00B1CF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAC6E8611F5FA72E00B1CF26 /* CabriolaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CabriolaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC6E8651F5FA72E00B1CF26 /* CabriolaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabriolaAppUITests.swift; sourceTree = "<group>"; };
+		EAC6E8671F5FA72E00B1CF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAC6E8731F5FA74500B1CF26 /* CabriolaApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CabriolaApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		EAC6E8741F5FA74500B1CF26 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAC6E8751F5FA74500B1CF26 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAC6E89E1F5FA77400B1CF26 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EAC6E8A01F5FA78600B1CF26 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAC6E8A31F5FA7A500B1CF26 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EAC6E8A41F5FA7A500B1CF26 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		EAC6E8A71F5FA7D800B1CF26 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AccountKit.framework; path = CabriolaApp/AccountKit.framework; sourceTree = "<group>"; };
+		EAC6E8A81F5FA7D800B1CF26 /* AccountKitStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AccountKitStrings.bundle; path = CabriolaApp/AccountKitStrings.bundle; sourceTree = "<group>"; };
+		EAC6E8AE1F5FA96A00B1CF26 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		EAC6E8B01F5FA97000B1CF26 /* FacebookCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookCore.framework; path = "../../Library/Developer/Xcode/DerivedData/CabriolaApp-bimwufplymqvrwacirycjglosqpz/Build/Products/Debug-iphonesimulator/FacebookCore/FacebookCore.framework"; sourceTree = "<group>"; };
+		EAC6E8B21F5FA97300B1CF26 /* FacebookLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookLogin.framework; path = "../../Library/Developer/Xcode/DerivedData/CabriolaApp-bimwufplymqvrwacirycjglosqpz/Build/Products/Debug-iphonesimulator/FacebookLogin/FacebookLogin.framework"; sourceTree = "<group>"; };
+		EAC6E8B61F5FAA7100B1CF26 /* BridgeBlur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BridgeBlur.jpg; sourceTree = "<group>"; };
+		EAC6E8B71F5FAA7100B1CF26 /* CabriolaBlank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CabriolaBlank.png; sourceTree = "<group>"; };
+		EAC6E8B81F5FAA7100B1CF26 /* CabriolaFullLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CabriolaFullLogo.png; sourceTree = "<group>"; };
+		EAC6E8B91F5FAA7100B1CF26 /* CabriolaTrees.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CabriolaTrees.png; sourceTree = "<group>"; };
+		EAC6E8BA1F5FAA7100B1CF26 /* city.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = city.jpg; sourceTree = "<group>"; };
+		EAC6E8BB1F5FAA7100B1CF26 /* CityLights.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CityLights.jpg; sourceTree = "<group>"; };
+		EAC6E8BC1F5FAA7100B1CF26 /* diego-ph-221236.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "diego-ph-221236.jpg"; sourceTree = "<group>"; };
+		EAC6E8BD1F5FAA7100B1CF26 /* FullBridge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FullBridge.jpg; sourceTree = "<group>"; };
+		EAC6E8BE1F5FAA7100B1CF26 /* Line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Line.png; sourceTree = "<group>"; };
+		EAC6E8BF1F5FAA7100B1CF26 /* logo-white (77).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-white (77).png"; sourceTree = "<group>"; };
+		EAC6E8C01F5FAA7100B1CF26 /* portland.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = portland.jpg; sourceTree = "<group>"; };
+		EAC6E8C11F5FAA7100B1CF26 /* sanfran.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sanfran.jpg; sourceTree = "<group>"; };
+		EAC6E8C21F5FAA7100B1CF26 /* seattle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seattle.jpg; sourceTree = "<group>"; };
+		EAC6E8C31F5FAA7100B1CF26 /* Skyline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Skyline.jpg; sourceTree = "<group>"; };
+		EAC6E8C41F5FAA7100B1CF26 /* Strokes2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Strokes2.png; sourceTree = "<group>"; };
+		EAC6E8C51F5FAA7100B1CF26 /* Surf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Surf.jpg; sourceTree = "<group>"; };
+		EAC6E8C61F5FAA7100B1CF26 /* vancouver.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vancouver.jpg; sourceTree = "<group>"; };
+		EAC6E8D81F5FAA8000B1CF26 /* Deadhead_Script_Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Deadhead_Script_Italic.otf; sourceTree = "<group>"; };
+		EAC6E8D91F5FAA8000B1CF26 /* Raleway-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.otf"; sourceTree = "<group>"; };
+		EAC6E8DD1F5FAC7500B1CF26 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EAC6E8DE1F5FAC7500B1CF26 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		EAC6E8E21F5FAC9600B1CF26 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		EAC6E8E31F5FAC9600B1CF26 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EAC6E8E41F5FAC9600B1CF26 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		EAC6E8E51F5FAC9600B1CF26 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		EAC6E8EA1F5FB8DC00B1CF26 /* LightsBlur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LightsBlur.jpg; sourceTree = "<group>"; };
+		F3BA3C8912A51721669DD5FE /* Pods-CabriolaAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabriolaAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CabriolaAppTests/Pods-CabriolaAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAC6E83F1F5FA72E00B1CF26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1BD1421F6A1C8500B79DC0 /* UIKit.framework in Frameworks */,
+				EAC6E8B31F5FA97300B1CF26 /* FacebookLogin.framework in Frameworks */,
+				EAC6E8B11F5FA97000B1CF26 /* FacebookCore.framework in Frameworks */,
+				EAC6E8AF1F5FA96A00B1CF26 /* UserNotifications.framework in Frameworks */,
+				EAC6E8A91F5FA7D800B1CF26 /* AccountKit.framework in Frameworks */,
+				EA5BCAAA1F60D98F00933429 /* MapKit.framework in Frameworks */,
+				EAC6E8AC1F5FA80C00B1CF26 /* AccountKitStrings.bundle in Frameworks */,
+				FCF3FAB833061F63C6C93BB4 /* Pods_CabriolaApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC6E8531F5FA72E00B1CF26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79EDFE484D1ADD5E26635EA /* Pods_CabriolaAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC6E85E1F5FA72E00B1CF26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B701929B46E06115CCA70DB6 /* Pods_CabriolaAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F1A4495EBC266423141D4A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04468D0E1CFE4FE7BD8504E0 /* Pods-CabriolaApp.debug.xcconfig */,
+				C9362C5EABBBFBBC3465480B /* Pods-CabriolaApp.release.xcconfig */,
+				F3BA3C8912A51721669DD5FE /* Pods-CabriolaAppTests.debug.xcconfig */,
+				C61306704B6C9DCDE6E88756 /* Pods-CabriolaAppTests.release.xcconfig */,
+				844DCC11173BB315E6A7ED19 /* Pods-CabriolaAppUITests.debug.xcconfig */,
+				74AD6ACE26C52453F63277B0 /* Pods-CabriolaAppUITests.release.xcconfig */,
+				58A4B40F02666BA7F1622560 /* Pods-CabriolaApp-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				33A00CF124D351663613DE01 /* Pods-CabriolaApp-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EAC6E8391F5FA72E00B1CF26 = {
+			isa = PBXGroup;
+			children = (
+				EAC6E8441F5FA72E00B1CF26 /* CabriolaApp */,
+				EAC6E8591F5FA72E00B1CF26 /* CabriolaAppTests */,
+				EAC6E8431F5FA72E00B1CF26 /* Products */,
+				EAC6E8AD1F5FA81200B1CF26 /* Frameworks */,
+				2F1A4495EBC266423141D4A1 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		EAC6E8431F5FA72E00B1CF26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAC6E8421F5FA72E00B1CF26 /* CabriolaApp.app */,
+				EAC6E8561F5FA72E00B1CF26 /* CabriolaAppTests.xctest */,
+				EAC6E8611F5FA72E00B1CF26 /* CabriolaAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAC6E8441F5FA72E00B1CF26 /* CabriolaApp */ = {
+			isa = PBXGroup;
+			children = (
+				EA8C51E71F60AE61009B127D /* CabriolaApp.entitlements */,
+				EAC6E8741F5FA74500B1CF26 /* AppDelegate.swift */,
+				EAC6E8751F5FA74500B1CF26 /* ViewController.swift */,
+				EAC6E89E1F5FA77400B1CF26 /* Main.storyboard */,
+				EA5BCAAB1F60DA6E00933429 /* MapViewController.swift */,
+				EAC6E8A01F5FA78600B1CF26 /* LaunchScreen.storyboard */,
+				EAC6E8DC1F5FAC6900B1CF26 /* Other */,
+				EAC6E8B51F5FAA4E00B1CF26 /* Images */,
+				EAC6E8B41F5FA9F400B1CF26 /* Fonts */,
+				EAC6E8A21F5FA79000B1CF26 /* AccountKit */,
+				EAC6E8641F5FA72E00B1CF26 /* CabriolaAppUITests */,
+				EAC6E84C1F5FA72E00B1CF26 /* Assets.xcassets */,
+				EAC6E8511F5FA72E00B1CF26 /* Info.plist */,
+				EAC6E8731F5FA74500B1CF26 /* CabriolaApp-Bridging-Header.h */,
+			);
+			path = CabriolaApp;
+			sourceTree = "<group>";
+		};
+		EAC6E8591F5FA72E00B1CF26 /* CabriolaAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAC6E85A1F5FA72E00B1CF26 /* CabriolaAppTests.swift */,
+				EAC6E85C1F5FA72E00B1CF26 /* Info.plist */,
+			);
+			path = CabriolaAppTests;
+			sourceTree = "<group>";
+		};
+		EAC6E8641F5FA72E00B1CF26 /* CabriolaAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAC6E8651F5FA72E00B1CF26 /* CabriolaAppUITests.swift */,
+				EAC6E8671F5FA72E00B1CF26 /* Info.plist */,
+			);
+			path = CabriolaAppUITests;
+			sourceTree = SOURCE_ROOT;
+		};
+		EAC6E8A21F5FA79000B1CF26 /* AccountKit */ = {
+			isa = PBXGroup;
+			children = (
+				EAC6E8A31F5FA7A500B1CF26 /* LoginViewController.swift */,
+				EAC6E8A41F5FA7A500B1CF26 /* AccountViewController.swift */,
+			);
+			name = AccountKit;
+			path = CabriolaAppUITests;
+			sourceTree = SOURCE_ROOT;
+		};
+		EAC6E8AD1F5FA81200B1CF26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA1BD1411F6A1C8500B79DC0 /* UIKit.framework */,
+				EA5BCAA91F60D98F00933429 /* MapKit.framework */,
+				EAC6E8B21F5FA97300B1CF26 /* FacebookLogin.framework */,
+				EAC6E8B01F5FA97000B1CF26 /* FacebookCore.framework */,
+				EAC6E8AE1F5FA96A00B1CF26 /* UserNotifications.framework */,
+				EAC6E8A81F5FA7D800B1CF26 /* AccountKitStrings.bundle */,
+				EAC6E8A71F5FA7D800B1CF26 /* AccountKit.framework */,
+				7BBE7599A1C0D24698942160 /* Pods_CabriolaApp.framework */,
+				B48A483F6A8E88E9E9CD2919 /* Pods_CabriolaAppTests.framework */,
+				62EC454B7191D8DB2BA17457 /* Pods_CabriolaAppUITests.framework */,
+				716409A5C72F71FF3147E31E /* Pods_CabriolaApp_OneSignalNotificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAC6E8B41F5FA9F400B1CF26 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EAC6E8D81F5FAA8000B1CF26 /* Deadhead_Script_Italic.otf */,
+				EAC6E8D91F5FAA8000B1CF26 /* Raleway-Regular.otf */,
+			);
+			name = Fonts;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		EAC6E8B51F5FAA4E00B1CF26 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EAC6E8B61F5FAA7100B1CF26 /* BridgeBlur.jpg */,
+				EAC6E8B71F5FAA7100B1CF26 /* CabriolaBlank.png */,
+				EAC6E8B81F5FAA7100B1CF26 /* CabriolaFullLogo.png */,
+				EAC6E8B91F5FAA7100B1CF26 /* CabriolaTrees.png */,
+				EAC6E8BA1F5FAA7100B1CF26 /* city.jpg */,
+				EAC6E8BB1F5FAA7100B1CF26 /* CityLights.jpg */,
+				EAC6E8BC1F5FAA7100B1CF26 /* diego-ph-221236.jpg */,
+				EAC6E8BD1F5FAA7100B1CF26 /* FullBridge.jpg */,
+				EAC6E8EA1F5FB8DC00B1CF26 /* LightsBlur.jpg */,
+				EAC6E8BE1F5FAA7100B1CF26 /* Line.png */,
+				EAC6E8BF1F5FAA7100B1CF26 /* logo-white (77).png */,
+				EAC6E8C01F5FAA7100B1CF26 /* portland.jpg */,
+				EAC6E8C11F5FAA7100B1CF26 /* sanfran.jpg */,
+				EAC6E8C21F5FAA7100B1CF26 /* seattle.jpg */,
+				EAC6E8C31F5FAA7100B1CF26 /* Skyline.jpg */,
+				EAC6E8C41F5FAA7100B1CF26 /* Strokes2.png */,
+				EAC6E8C51F5FAA7100B1CF26 /* Surf.jpg */,
+				EAC6E8C61F5FAA7100B1CF26 /* vancouver.jpg */,
+			);
+			name = Images;
+			path = CabriolaAppUITests;
+			sourceTree = SOURCE_ROOT;
+		};
+		EAC6E8DC1F5FAC6900B1CF26 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EAC6E8DD1F5FAC7500B1CF26 /* User.swift */,
+				EAC6E8DE1F5FAC7500B1CF26 /* Course.swift */,
+				EAC6E8E11F5FAC8D00B1CF26 /* TableViews */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		EAC6E8E11F5FAC8D00B1CF26 /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				EAC6E8E21F5FAC9600B1CF26 /* TableViewController.swift */,
+				EAC6E8E31F5FAC9600B1CF26 /* DetailViewController.swift */,
+				EAC6E8E41F5FAC9600B1CF26 /* TableViewCell.swift */,
+				EAC6E8E51F5FAC9600B1CF26 /* TableViewCell.xib */,
+			);
+			name = TableViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAC6E8411F5FA72E00B1CF26 /* CabriolaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC6E86A1F5FA72E00B1CF26 /* Build configuration list for PBXNativeTarget "CabriolaApp" */;
+			buildPhases = (
+				FAEF6B1C6F9D2936EE3F47E9 /* [CP] Check Pods Manifest.lock */,
+				EAC6E83E1F5FA72E00B1CF26 /* Sources */,
+				EAC6E83F1F5FA72E00B1CF26 /* Frameworks */,
+				EAC6E8401F5FA72E00B1CF26 /* Resources */,
+				93CFCDF448B99A13654BAAB2 /* [CP] Embed Pods Frameworks */,
+				0C70A5487E3F0E22E1D5269F /* [CP] Copy Pods Resources */,
+				EA8C51F71F60B40C009B127D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CabriolaApp;
+			productName = CabriolaApp;
+			productReference = EAC6E8421F5FA72E00B1CF26 /* CabriolaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAC6E8551F5FA72E00B1CF26 /* CabriolaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC6E86D1F5FA72E00B1CF26 /* Build configuration list for PBXNativeTarget "CabriolaAppTests" */;
+			buildPhases = (
+				8F21208DAA4A483F7B757AE3 /* [CP] Check Pods Manifest.lock */,
+				EAC6E8521F5FA72E00B1CF26 /* Sources */,
+				EAC6E8531F5FA72E00B1CF26 /* Frameworks */,
+				EAC6E8541F5FA72E00B1CF26 /* Resources */,
+				AC01212A6B5D3C109B8EDA4A /* [CP] Embed Pods Frameworks */,
+				ACAB73784C632949CF843348 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAC6E8581F5FA72E00B1CF26 /* PBXTargetDependency */,
+			);
+			name = CabriolaAppTests;
+			productName = CabriolaAppTests;
+			productReference = EAC6E8561F5FA72E00B1CF26 /* CabriolaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAC6E8601F5FA72E00B1CF26 /* CabriolaAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC6E8701F5FA72E00B1CF26 /* Build configuration list for PBXNativeTarget "CabriolaAppUITests" */;
+			buildPhases = (
+				D7CCA36CF28C3CB031D416A0 /* [CP] Check Pods Manifest.lock */,
+				EAC6E85D1F5FA72E00B1CF26 /* Sources */,
+				EAC6E85E1F5FA72E00B1CF26 /* Frameworks */,
+				EAC6E85F1F5FA72E00B1CF26 /* Resources */,
+				CC482D444A4870A4B2B4C162 /* [CP] Embed Pods Frameworks */,
+				26C3A07DD4BD5169A2B40C8F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAC6E8631F5FA72E00B1CF26 /* PBXTargetDependency */,
+			);
+			name = CabriolaAppUITests;
+			productName = CabriolaAppUITests;
+			productReference = EAC6E8611F5FA72E00B1CF26 /* CabriolaAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAC6E83A1F5FA72E00B1CF26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jaxon Stevens";
+				TargetAttributes = {
+					EAC6E8411F5FA72E00B1CF26 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 45J9WDN6PB;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					EAC6E8551F5FA72E00B1CF26 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 45J9WDN6PB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EAC6E8411F5FA72E00B1CF26;
+					};
+					EAC6E8601F5FA72E00B1CF26 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 45J9WDN6PB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EAC6E8411F5FA72E00B1CF26;
+					};
+				};
+			};
+			buildConfigurationList = EAC6E83D1F5FA72E00B1CF26 /* Build configuration list for PBXProject "CabriolaApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAC6E8391F5FA72E00B1CF26;
+			productRefGroup = EAC6E8431F5FA72E00B1CF26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAC6E8411F5FA72E00B1CF26 /* CabriolaApp */,
+				EAC6E8551F5FA72E00B1CF26 /* CabriolaAppTests */,
+				EAC6E8601F5FA72E00B1CF26 /* CabriolaAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAC6E8401F5FA72E00B1CF26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC6E8EB1F5FB8DC00B1CF26 /* LightsBlur.jpg in Resources */,
+				EAC6E89F1F5FA77400B1CF26 /* Main.storyboard in Resources */,
+				EAC6E8CC1F5FAA7100B1CF26 /* CityLights.jpg in Resources */,
+				EAC6E8C71F5FAA7100B1CF26 /* BridgeBlur.jpg in Resources */,
+				EAC6E8D71F5FAA7100B1CF26 /* vancouver.jpg in Resources */,
+				EAC6E8D21F5FAA7100B1CF26 /* sanfran.jpg in Resources */,
+				EAC6E8D11F5FAA7100B1CF26 /* portland.jpg in Resources */,
+				EAC6E8AA1F5FA7D800B1CF26 /* AccountKitStrings.bundle in Resources */,
+				EAC6E8D01F5FAA7100B1CF26 /* logo-white (77).png in Resources */,
+				EAC6E8D61F5FAA7100B1CF26 /* Surf.jpg in Resources */,
+				EAC6E8D41F5FAA7100B1CF26 /* Skyline.jpg in Resources */,
+				EAC6E8D31F5FAA7100B1CF26 /* seattle.jpg in Resources */,
+				EAC6E8C91F5FAA7100B1CF26 /* CabriolaFullLogo.png in Resources */,
+				EAC6E8DA1F5FAA8000B1CF26 /* Deadhead_Script_Italic.otf in Resources */,
+				EAC6E8E91F5FAC9600B1CF26 /* TableViewCell.xib in Resources */,
+				EAC6E8CE1F5FAA7100B1CF26 /* FullBridge.jpg in Resources */,
+				EAC6E8CB1F5FAA7100B1CF26 /* city.jpg in Resources */,
+				EAC6E8CA1F5FAA7100B1CF26 /* CabriolaTrees.png in Resources */,
+				EAC6E8D51F5FAA7100B1CF26 /* Strokes2.png in Resources */,
+				EAC6E84D1F5FA72E00B1CF26 /* Assets.xcassets in Resources */,
+				EAC6E8CD1F5FAA7100B1CF26 /* diego-ph-221236.jpg in Resources */,
+				EAC6E8A11F5FA78600B1CF26 /* LaunchScreen.storyboard in Resources */,
+				EAC6E8CF1F5FAA7100B1CF26 /* Line.png in Resources */,
+				EAC6E8C81F5FAA7100B1CF26 /* CabriolaBlank.png in Resources */,
+				EAC6E8DB1F5FAA8000B1CF26 /* Raleway-Regular.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC6E8541F5FA72E00B1CF26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC6E85F1F5FA72E00B1CF26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C70A5487E3F0E22E1D5269F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CabriolaApp/Pods-CabriolaApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26C3A07DD4BD5169A2B40C8F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CabriolaAppUITests/Pods-CabriolaAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F21208DAA4A483F7B757AE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CabriolaAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93CFCDF448B99A13654BAAB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CabriolaApp/Pods-CabriolaApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBNotifications/FBNotifications.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBNotifications.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CabriolaApp/Pods-CabriolaApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC01212A6B5D3C109B8EDA4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CabriolaAppTests/Pods-CabriolaAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACAB73784C632949CF843348 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CabriolaAppTests/Pods-CabriolaAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC482D444A4870A4B2B4C162 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CabriolaAppUITests/Pods-CabriolaAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7CCA36CF28C3CB031D416A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CabriolaAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAEF6B1C6F9D2936EE3F47E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CabriolaApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAC6E83E1F5FA72E00B1CF26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC6E8E01F5FAC7500B1CF26 /* Course.swift in Sources */,
+				EAC6E8E61F5FAC9600B1CF26 /* TableViewController.swift in Sources */,
+				EAC6E8A51F5FA7A500B1CF26 /* LoginViewController.swift in Sources */,
+				EA5BCAAC1F60DA6E00933429 /* MapViewController.swift in Sources */,
+				EAC6E8E81F5FAC9600B1CF26 /* TableViewCell.swift in Sources */,
+				EAC6E8771F5FA74500B1CF26 /* ViewController.swift in Sources */,
+				EAC6E8A61F5FA7A500B1CF26 /* AccountViewController.swift in Sources */,
+				EAC6E8DF1F5FAC7500B1CF26 /* User.swift in Sources */,
+				EAC6E8761F5FA74500B1CF26 /* AppDelegate.swift in Sources */,
+				EAC6E8E71F5FAC9600B1CF26 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC6E8521F5FA72E00B1CF26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC6E85B1F5FA72E00B1CF26 /* CabriolaAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC6E85D1F5FA72E00B1CF26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC6E8661F5FA72E00B1CF26 /* CabriolaAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAC6E8581F5FA72E00B1CF26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAC6E8411F5FA72E00B1CF26 /* CabriolaApp */;
+			targetProxy = EAC6E8571F5FA72E00B1CF26 /* PBXContainerItemProxy */;
+		};
+		EAC6E8631F5FA72E00B1CF26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAC6E8411F5FA72E00B1CF26 /* CabriolaApp */;
+			targetProxy = EAC6E8621F5FA72E00B1CF26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EAC6E8681F5FA72E00B1CF26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAC6E8691F5FA72E00B1CF26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAC6E86B1F5FA72E00B1CF26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04468D0E1CFE4FE7BD8504E0 /* Pods-CabriolaApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CabriolaApp/CabriolaApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 45J9WDN6PB;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CabriolaApp",
+				);
+				INFOPLIST_FILE = CabriolaApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VFS.Cabriola;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CabriolaApp/CabriolaApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EAC6E86C1F5FA72E00B1CF26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9362C5EABBBFBBC3465480B /* Pods-CabriolaApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CabriolaApp/CabriolaApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 45J9WDN6PB;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CabriolaApp",
+				);
+				INFOPLIST_FILE = CabriolaApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VFS.Cabriola;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CabriolaApp/CabriolaApp-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EAC6E86E1F5FA72E00B1CF26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3BA3C8912A51721669DD5FE /* Pods-CabriolaAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 45J9WDN6PB;
+				INFOPLIST_FILE = CabriolaAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VFS.CabriolaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CabriolaApp.app/CabriolaApp";
+			};
+			name = Debug;
+		};
+		EAC6E86F1F5FA72E00B1CF26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C61306704B6C9DCDE6E88756 /* Pods-CabriolaAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 45J9WDN6PB;
+				INFOPLIST_FILE = CabriolaAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VFS.CabriolaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CabriolaApp.app/CabriolaApp";
+			};
+			name = Release;
+		};
+		EAC6E8711F5FA72E00B1CF26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 844DCC11173BB315E6A7ED19 /* Pods-CabriolaAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 45J9WDN6PB;
+				INFOPLIST_FILE = CabriolaAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VFS.CabriolaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CabriolaApp;
+			};
+			name = Debug;
+		};
+		EAC6E8721F5FA72E00B1CF26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74AD6ACE26C52453F63277B0 /* Pods-CabriolaAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 45J9WDN6PB;
+				INFOPLIST_FILE = CabriolaAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VFS.CabriolaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CabriolaApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAC6E83D1F5FA72E00B1CF26 /* Build configuration list for PBXProject "CabriolaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC6E8681F5FA72E00B1CF26 /* Debug */,
+				EAC6E8691F5FA72E00B1CF26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC6E86A1F5FA72E00B1CF26 /* Build configuration list for PBXNativeTarget "CabriolaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC6E86B1F5FA72E00B1CF26 /* Debug */,
+				EAC6E86C1F5FA72E00B1CF26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC6E86D1F5FA72E00B1CF26 /* Build configuration list for PBXNativeTarget "CabriolaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC6E86E1F5FA72E00B1CF26 /* Debug */,
+				EAC6E86F1F5FA72E00B1CF26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC6E8701F5FA72E00B1CF26 /* Build configuration list for PBXNativeTarget "CabriolaAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC6E8711F5FA72E00B1CF26 /* Debug */,
+				EAC6E8721F5FA72E00B1CF26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAC6E83A1F5FA72E00B1CF26 /* Project object */;
+}
