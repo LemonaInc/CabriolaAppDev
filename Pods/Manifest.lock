@@ -18,6 +18,7 @@ PODS:
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.22.1):
     - FBSDKCoreKit
+  - JSSAlertView (3.0.4)
 
 DEPENDENCIES:
   - FacebookCore (~> 0.2)
@@ -25,6 +26,7 @@ DEPENDENCIES:
   - FBNotifications
   - FBSDKCoreKit (~> 4.22.1)
   - FBSDKLoginKit (~> 4.22.1)
+  - JSSAlertView
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -33,7 +35,8 @@ SPEC CHECKSUMS:
   FBNotifications: 3f1a9e43ffa2979a685eec29c960ca6a15c70be9
   FBSDKCoreKit: 9c2daf0162214d6d2e21cf8208a9c6c2a2e42b9c
   FBSDKLoginKit: 00cf28916b9f0169763a3d61985d745b579fe304
+  JSSAlertView: 7d8345c88e6fd8b515bc49f0fc8d8c69f6776b9c
 
-PODFILE CHECKSUM: 16007c3f85d1c4ffb738444efd953e0f7d135226
+PODFILE CHECKSUM: ff9c64d373d7a64a9883d81066807ab68f8e8efa
 
 COCOAPODS: 1.3.1
