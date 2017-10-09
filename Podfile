@@ -11,6 +11,10 @@ pod 'FacebookLogin', '~> 0.2'
 pod 'FBNotifications'
 pod 'FBSDKCoreKit', '~> 4.22.1'
 pod 'FBSDKLoginKit', '~> 4.22.1'
+pod 'GoogleMaps'
+pod 'GooglePlaces'
+pod 'GooglePlacePicker'
+
 
 
 

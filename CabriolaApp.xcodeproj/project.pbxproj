@@ -12,6 +12,9 @@
 		EA1BD1421F6A1C8500B79DC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1BD1411F6A1C8500B79DC0 /* UIKit.framework */; };
 		EA31D2BC1F85C08E008D57CB /* SetLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA31D2BB1F85C08E008D57CB /* SetLocationViewController.swift */; };
 		EA31D2BE1F85C876008D57CB /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA31D2BD1F85C876008D57CB /* Global.swift */; };
+		EA31D2C01F85DA91008D57CB /* GoogleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA31D2BF1F85DA91008D57CB /* GoogleMapsViewController.swift */; };
+		EA3C43311F8B11E5002BE42A /* LocationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C43301F8B11E5002BE42A /* LocationMapViewController.swift */; };
+		EA3C43331F8B1496002BE42A /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C43321F8B1496002BE42A /* PlacesViewController.swift */; };
 		EA5BCAAA1F60D98F00933429 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5BCAA91F60D98F00933429 /* MapKit.framework */; };
 		EA5BCAAC1F60DA6E00933429 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5BCAAB1F60DA6E00933429 /* MapViewController.swift */; };
 		EAC6E84D1F5FA72E00B1CF26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E84C1F5FA72E00B1CF26 /* Assets.xcassets */; };
@@ -103,6 +106,9 @@
 		EA1BD1411F6A1C8500B79DC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EA31D2BB1F85C08E008D57CB /* SetLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetLocationViewController.swift; sourceTree = "<group>"; };
 		EA31D2BD1F85C876008D57CB /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		EA31D2BF1F85DA91008D57CB /* GoogleMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsViewController.swift; sourceTree = "<group>"; };
+		EA3C43301F8B11E5002BE42A /* LocationMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapViewController.swift; sourceTree = "<group>"; };
+		EA3C43321F8B1496002BE42A /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		EA5BCAA91F60D98F00933429 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EA5BCAAB1F60DA6E00933429 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		EA8C51E71F60AE61009B127D /* CabriolaApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CabriolaApp.entitlements; sourceTree = "<group>"; };
@@ -232,11 +238,14 @@
 			children = (
 				EA8C51E71F60AE61009B127D /* CabriolaApp.entitlements */,
 				EAC6E8741F5FA74500B1CF26 /* AppDelegate.swift */,
+				EA31D2BF1F85DA91008D57CB /* GoogleMapsViewController.swift */,
 				EAC6E8751F5FA74500B1CF26 /* ViewController.swift */,
 				EA31D2BB1F85C08E008D57CB /* SetLocationViewController.swift */,
 				EA5BCAAB1F60DA6E00933429 /* MapViewController.swift */,
 				EA31D2BD1F85C876008D57CB /* Global.swift */,
 				EAC6E89E1F5FA77400B1CF26 /* Main.storyboard */,
+				EA3C43301F8B11E5002BE42A /* LocationMapViewController.swift */,
+				EA3C43321F8B1496002BE42A /* PlacesViewController.swift */,
 				EAC6E8A01F5FA78600B1CF26 /* LaunchScreen.storyboard */,
 				EAC6E8DC1F5FAC6900B1CF26 /* Other */,
 				EAC6E8B51F5FAA4E00B1CF26 /* Images */,
@@ -536,9 +545,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CabriolaApp/Pods-CabriolaApp-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -696,9 +710,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA31D2C01F85DA91008D57CB /* GoogleMapsViewController.swift in Sources */,
 				EA31D2BC1F85C08E008D57CB /* SetLocationViewController.swift in Sources */,
 				EAC6E8E01F5FAC7500B1CF26 /* Course.swift in Sources */,
 				EAC6E8E61F5FAC9600B1CF26 /* TableViewController.swift in Sources */,
+				EA3C43311F8B11E5002BE42A /* LocationMapViewController.swift in Sources */,
 				EAC6E8A51F5FA7A500B1CF26 /* LoginViewController.swift in Sources */,
 				EA5BCAAC1F60DA6E00933429 /* MapViewController.swift in Sources */,
 				EAC6E8E81F5FAC9600B1CF26 /* TableViewCell.swift in Sources */,
@@ -706,6 +722,7 @@
 				EAC6E8A61F5FA7A500B1CF26 /* AccountViewController.swift in Sources */,
 				EA31D2BE1F85C876008D57CB /* Global.swift in Sources */,
 				EAC6E8DF1F5FAC7500B1CF26 /* User.swift in Sources */,
+				EA3C43331F8B1496002BE42A /* PlacesViewController.swift in Sources */,
 				EAC6E8761F5FA74500B1CF26 /* AppDelegate.swift in Sources */,
 				EAC6E8E71F5FAC9600B1CF26 /* DetailViewController.swift in Sources */,
 			);
