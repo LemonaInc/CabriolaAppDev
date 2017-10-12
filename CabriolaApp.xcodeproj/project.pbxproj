@@ -237,13 +237,13 @@
 			isa = PBXGroup;
 			children = (
 				EA8C51E71F60AE61009B127D /* CabriolaApp.entitlements */,
+				EAC6E89E1F5FA77400B1CF26 /* Main.storyboard */,
 				EAC6E8741F5FA74500B1CF26 /* AppDelegate.swift */,
 				EA31D2BF1F85DA91008D57CB /* GoogleMapsViewController.swift */,
 				EAC6E8751F5FA74500B1CF26 /* ViewController.swift */,
 				EA31D2BB1F85C08E008D57CB /* SetLocationViewController.swift */,
 				EA5BCAAB1F60DA6E00933429 /* MapViewController.swift */,
 				EA31D2BD1F85C876008D57CB /* Global.swift */,
-				EAC6E89E1F5FA77400B1CF26 /* Main.storyboard */,
 				EA3C43301F8B11E5002BE42A /* LocationMapViewController.swift */,
 				EA3C43321F8B1496002BE42A /* PlacesViewController.swift */,
 				EAC6E8A01F5FA78600B1CF26 /* LaunchScreen.storyboard */,
