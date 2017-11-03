@@ -32,9 +32,14 @@ final class LoginViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+   // navigationController?.isNavigationBarHidden = true
+    navigationController?.navigationBar.isUserInteractionEnabled = false
+   // navigationController?.navigationBar.tintColor = UIColor.black
+    
     showAccountOnAppear = accountKit.currentAccessToken != nil
     pendingLoginViewController = accountKit.viewControllerForLoginResume() as? AKFViewController
   }
+    
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)

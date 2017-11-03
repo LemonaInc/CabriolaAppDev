@@ -33,6 +33,15 @@ final class AccountViewController: UIViewController {
   
   // MARK: - view management
   
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        navigationController?.isNavigationBarHidden = true
+        navigationController?.navigationBar.isUserInteractionEnabled = false
+        //navigationController?.navigationBar.tintColor = UIColor.black
+        
+    }
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     
