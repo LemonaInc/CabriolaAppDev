@@ -14,6 +14,8 @@ pod 'FBSDKLoginKit', '~> 4.22.1'
 pod 'GoogleMaps'
 pod 'GooglePlaces'
 pod 'GooglePlacePicker'
+pod 'Mapbox-iOS-SDK', '~> 3.6'
+
 
 
 
