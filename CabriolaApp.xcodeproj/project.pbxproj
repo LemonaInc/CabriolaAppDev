@@ -17,6 +17,7 @@
 		EA31D2C01F85DA91008D57CB /* GoogleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA31D2BF1F85DA91008D57CB /* GoogleMapsViewController.swift */; };
 		EA5BCAAA1F60D98F00933429 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5BCAA91F60D98F00933429 /* MapKit.framework */; };
 		EA5BCAAC1F60DA6E00933429 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5BCAAB1F60DA6E00933429 /* MapViewController.swift */; };
+		EA5CB2281FC24A960089883A /* GoMeeText.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5CB2271FC24A950089883A /* GoMeeText.png */; };
 		EAC6E84D1F5FA72E00B1CF26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC6E84C1F5FA72E00B1CF26 /* Assets.xcassets */; };
 		EAC6E85B1F5FA72E00B1CF26 /* CabriolaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6E85A1F5FA72E00B1CF26 /* CabriolaAppTests.swift */; };
 		EAC6E8661F5FA72E00B1CF26 /* CabriolaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6E8651F5FA72E00B1CF26 /* CabriolaAppUITests.swift */; };
@@ -111,6 +112,7 @@
 		EA31D2BF1F85DA91008D57CB /* GoogleMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsViewController.swift; sourceTree = "<group>"; };
 		EA5BCAA91F60D98F00933429 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EA5BCAAB1F60DA6E00933429 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		EA5CB2271FC24A950089883A /* GoMeeText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoMeeText.png; sourceTree = "<group>"; };
 		EA8C51E71F60AE61009B127D /* CabriolaApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CabriolaApp.entitlements; sourceTree = "<group>"; };
 		EAC6E8421F5FA72E00B1CF26 /* CabriolaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CabriolaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC6E84C1F5FA72E00B1CF26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 			children = (
 				EA8C51E71F60AE61009B127D /* CabriolaApp.entitlements */,
 				EAC6E89E1F5FA77400B1CF26 /* Main.storyboard */,
+				EA5CB2271FC24A950089883A /* GoMeeText.png */,
 				EAC6E8741F5FA74500B1CF26 /* AppDelegate.swift */,
 				EA31D2BF1F85DA91008D57CB /* GoogleMapsViewController.swift */,
 				EA31D2BB1F85C08E008D57CB /* SetLocationViewController.swift */,
@@ -512,6 +515,7 @@
 				EAC6E8CE1F5FAA7100B1CF26 /* FullBridge.jpg in Resources */,
 				EAC6E8CB1F5FAA7100B1CF26 /* city.jpg in Resources */,
 				EAC6E8CA1F5FAA7100B1CF26 /* CabriolaTrees.png in Resources */,
+				EA5CB2281FC24A960089883A /* GoMeeText.png in Resources */,
 				EAC6E8D51F5FAA7100B1CF26 /* Strokes2.png in Resources */,
 				EAC6E84D1F5FA72E00B1CF26 /* Assets.xcassets in Resources */,
 				EAC6E8CD1F5FAA7100B1CF26 /* diego-ph-221236.jpg in Resources */,
